@@ -13,7 +13,7 @@ let sharedKey
 //Create a Shared Key
 if (!process.env.SHARED_KEY) {
     sharedKey = randomstring.generate({
-  length: 1,
+  length: 12,
   charset: 'alphabetic'
 })
     fs.writeFile('.env', `SHARED_KEY=${sharedKey}`, function (err) {
