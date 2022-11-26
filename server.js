@@ -46,6 +46,8 @@ app.get('/', (req, res) => {
     checkData(timestamp)
     
     res.send(data)
+
+    console.log(data)
 })
 
 //Receives Location Data
