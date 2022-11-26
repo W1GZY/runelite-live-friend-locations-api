@@ -14,7 +14,7 @@ let sharedKey
 if (!process.env.SHARED_KEY) {
     sharedKey = randomstring.generate({
   length: 2,
-  charset: '99'
+  charset: '9'
 })
     fs.writeFile('.env', `SHARED_KEY=${sharedKey}`, function (err) {
         if (err) return console.log(err);
